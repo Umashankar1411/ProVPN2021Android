@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/serverParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarr"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:id="@+id/homeContextRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/serverFlag"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/gm"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="130dp"
+                    android:layout_alignTop="@+id/serverFlag"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-9dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/elapse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="United States"
+                        android:textAllCaps="true"
+                        android:textColor="@color/additionalServer"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/serverStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Connection Since : 5 hours"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dot_dark_screen4"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/homeBtnChooseCountry"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_bg"
+                        android:gravity="center"
+                        android:text="Choose Servers"
+                        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="140dp"
+                    android:background="@color/additionalServer" />
+
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignStart="@+id/serverFlag"
+                    android:layout_alignLeft="@+id/serverFlag"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="154dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="76dp"
+                        android:gravity="center"
+                        android:text="Network Speed"
+                        android:textAlignment="gravity" />
+
+                    <TextView
+                        android:id="@+id/circleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView"
+                        android:layout_alignLeft="@+id/textView"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="96dp"
+                        android:gravity="center"
+                        android:text="20 mbps"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/disconnect_red" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/networkspeeds" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignStart="@+id/serverFlag"
+                    android:layout_alignLeft="@+id/serverFlag"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginLeft="197dp"
+                    android:layout_marginTop="154dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="76dp"
+                        android:gravity="center"
+                        android:text="Sessions"
+                        android:textAlignment="gravity" />
+
+                    <TextView
+                        android:id="@+id/circleView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView1"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="100dp"
+                        android:gravity="center"
+                        android:text="55"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/disconnect_red" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/session" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignStart="@+id/serverFlag"
+                    android:layout_alignLeft="@+id/serverFlag"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="283dp">
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="76dp"
+                        android:gravity="center"
+                        android:text="Total Traffic"
+                        android:textAlignment="gravity" />
+
+                    <TextView
+                        android:id="@+id/serverTrafficInTotally"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView2"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="94dp"
+                        android:gravity="center"
+                        android:text="20 mbps"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/disconnect_red" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/traffics" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignStart="@+id/serverFlag"
+                    android:layout_alignLeft="@+id/serverFlag"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginLeft="197dp"
+                    android:layout_marginTop="280dp">
+
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="76dp"
+                        android:gravity="center"
+                        android:text="Total Consumed"
+                        android:textAlignment="gravity" />
+
+                    <TextView
+                        android:id="@+id/serverTrafficOutTotally"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView8"
+                        android:layout_alignLeft="@+id/textView8"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="94dp"
+                        android:gravity="center"
+                        android:text="20 mbps"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/disconnect_red" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="21dp"
+                        android:src="@drawable/consume" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_alignLeft="@+id/textView7"
+                    android:layout_alignTop="@+id/ipaddress"
+                    android:layout_marginStart="-92dp"
+                    android:layout_marginLeft="-92dp"
+                    android:layout_marginTop="323dp"
+                    android:text="Speed Test"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/serverConnect"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="82dp"
+                    android:layout_marginRight="82dp"
+                    android:layout_marginBottom="55dp"
+                    android:background="@drawable/button2"
+                    android:minHeight="35dp"
+                    android:onClick="serverOnClick"
+                    android:padding="5dp"
+                    android:text="TAP TO CONNECT"
+
+                    android:textColor="@color/buttonText" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/serverConnectingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/admob_adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit"></com.google.android.gms.ads.AdView>
+</RelativeLayout>

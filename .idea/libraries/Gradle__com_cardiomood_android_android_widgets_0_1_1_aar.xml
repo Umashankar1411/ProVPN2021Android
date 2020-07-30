@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cardiomood.android:android-widgets:0.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-widgets-0.1.1.aar/c37d28b700b62d234a7c67c994baf549/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-widgets-0.1.1.aar/c37d28b700b62d234a7c67c994baf549/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cardiomood.android/android-widgets/0.1.1/3ef7e4dcb7a72726e09d943ff0dd2404b59207b6/android-widgets-0.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cardiomood.android/android-widgets/0.1.1/743529577c5d4160c8838e4262df49affa5c53a8/android-widgets-0.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

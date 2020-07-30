@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1011295208291",
+    "firebase_url": "https://vpn-2019-7b443.firebaseio.com",
+    "project_id": "vpn-2019-7b443",
+    "storage_bucket": "vpn-2019-7b443.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011295208291:android:6d51645ce8269279",
+        "android_client_info": {
+          "package_name": "com.ugt.premiumvpn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011295208291-faidal6ilhs6k4bqk96p7e2ud7b9ptmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4MkvLH2oHBFWBTqWODyqZ-924taFvNbk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
